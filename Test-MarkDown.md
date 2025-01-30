@@ -35,24 +35,24 @@
 
 **Screenshot**
 
-![Sample Screenshot](Test-MarkDown-20250130.png)
+
 
 
 
 **PDF File**
 
 
-![Sample PDF](sample.pdf)
+
 
 
 
 **YAML File**
 
-![Sample YAML file](sample.yml)
+
 
 
 **Python Script**
 
-![Sample Python File](sample-python.py)
+
 
 ---
