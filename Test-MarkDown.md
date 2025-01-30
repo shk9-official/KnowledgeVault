@@ -10,7 +10,7 @@
 ### **Lists**
 - Bullet list item 1
 - Bullet list item 2
-  - Nested bullet list
+	- Nested bullet list
   
 1. Numbered list item 1
 2. Numbered list item 2
@@ -34,16 +34,20 @@
 ###  **Attachments**
 
 **Screenshot**
+
 ![Sample Screenshot](Test-MarkDown-20250130.png)
 
 
 
 **PDF File**
+
+
 ![Sample PDF](sample.pdf)
 
 
 
 **YAML File**
+
 ![Sample YAML file](sample.yml)
 
 
