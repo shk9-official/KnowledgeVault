@@ -1,13 +1,13 @@
-# Sample Markdown File for Testing#
+# Sample Markdown File for Testing
 
-## 1. Formatting Elements##
+## 1. Formatting Elements
 
-### **Bold and Italic**###
+### **Bold and Italic**
 - **This is bold text**
 - *This is italic text*
 - ***This is bold and italic***
 
-### **Lists**###
+### **Lists**
 - Bullet list item 1
 - Bullet list item 2
 	- Nested bullet list
@@ -15,14 +15,14 @@
 1. Numbered list item 1
 2. Numbered list item 2
 
-### **Links**###
+### **Links**
 - [GitHub](https://github.com)
 - [Obsidian](https://obsidian.md)
 
-### **Code Blocks** ###
-#### Inline Code####
+### **Code Blocks**
+#### Inline Code
 `print("Hello, World!")`
-#### Multi-line Code Blocks####
+#### Multi-line Code Blocks
 ````
 {
 	"name": "example",
@@ -44,17 +44,17 @@
 
 
 
-#### **YAML File**####
+#### **YAML File**
 
 ![Sample YAML file](Attachments/sample-yaml.yml)
 
 
-#### **Python File**####
+#### **Python File**
 
 ![Sample Python file](Attachments/sample-python.py)
 
 
-#### **JSON File**####
+#### **JSON File**
 
 ![Sample Json file](Attachments/sample-json.json)
 
