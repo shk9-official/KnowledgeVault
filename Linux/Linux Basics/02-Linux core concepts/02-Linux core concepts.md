@@ -109,8 +109,7 @@ sockets * core * threads = # of cpus
 
 `df -hP` -> Prints all mounted filesystem
 
-![df-hP.png](Attachments/df-hp.png)
-
+![dfhP.png](Attachments/dfhP.png)
 
 
 ---
