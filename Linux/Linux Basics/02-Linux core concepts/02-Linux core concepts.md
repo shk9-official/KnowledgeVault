@@ -78,7 +78,8 @@ sockets * core * threads = # of cpus
 - Use `-M` for displaying output in MB
 - Use `-k` for displaying output in KB
 
-![[lsmem&free.png]]
+![lsmem&free.png](Attachments/lsmem&free.png)
+
 
 `lshw` -> Hardware information/configuration in machine
 
@@ -109,6 +110,7 @@ sockets * core * threads = # of cpus
 `df -hP` -> Prints all mounted filesystem
 
 ![df-hP.png](Attachments/df-hp.png)
+
 
 
 ---
