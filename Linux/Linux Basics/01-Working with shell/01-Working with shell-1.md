@@ -29,6 +29,7 @@
 2. External commands
 	1. From external packages, binaries, scripts
 	2. Ex: `mv`, `uptime`
+
 $ `type uptime` , $ `type echo`, $ `type mv`
 
 ![01-Working with shell-1-20250211-1.png](Attachments/01-Working%20with%20shell-1-20250211-1.png)
@@ -122,9 +123,12 @@ $ `type uptime` , $ `type echo`, $ `type mv`
 - One line description of what the command does
 - Ex: `whatis date`
 
-- `man {command}` -> Provides entire documentation of the command
-- `command --help` -> Provides option and format on how the command should be used
-- `apropos {keyword}` -> Searches all man pages for the keyword
+
+`man {command}` -> Provides entire documentation of the command
+
+`command --help` -> Provides option and format on how the command should be used
+
+`apropos {keyword}` -> Searches all man pages for the keyword
 
 ---
 
