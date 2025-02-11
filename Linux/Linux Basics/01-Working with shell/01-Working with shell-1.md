@@ -4,13 +4,13 @@
 
 ### Introduction to Shell
 
-**Home Directory 
+**Home Directory** 
 - Location -> `/home/user_name`
 - Only the logged in user can access the home directory
 - Represented by "~"
 - `echo $HOME` shows home directory of current user
 
-**Command and Argument
+**Command and Argument**
 - $ echo Hello
 - $ echo -n Hello
 - $ command {options} {argument}
@@ -22,7 +22,7 @@
 ![01-Working with shell-1-20250211.png](Attachments/01-Working%20with%20shell-1-20250211.png)
 
 
-**Command types
+**Command types**
 1. Internal commands
 	1. These are build-in commands ~30 odd.
 	2. Ex: `echo`, `cd`, `pwd`, `mkdir`
@@ -41,40 +41,40 @@ $ `type uptime` , $ `type echo`, $ `type mv`
 ### Basic linux commands
 
 
-`pwd` -> Present working directory
-`ls` -> List contents of directory
-`mkdir` -> Creates new directory
-	Ex: `mkdir Asia Europe America Africa`
-`cd Asia` -> Changes directory to Asia
-`mkdir -p Asia/India/Mumbai` -> Creates all directories in the path, if not present
-`cd ..` -> Moves up one directory
-`cd` -> Changes present working directory to home directory
-Absolute path -> Location of file or directory from`/`
-Relative path -> Location of file or directory from present working directory
-`mv src dest` 
-- Moves file/directory from source to destination
-- Source and destination can be both absolute path or relative path
-- `mv` can also be use to rename files and folders
+- `pwd` -> Present working directory
+- `ls` -> List contents of directory
+- `mkdir` -> Creates new directory
+	- Ex: `mkdir Asia Europe America Africa`
+- `cd Asia` -> Changes directory to Asia
+- `mkdir -p Asia/India/Mumbai` -> Creates all directories in the path, if not present
+- `cd ..` -> Moves up one directory
+- `cd` -> Changes present working directory to home directory
+- Absolute path -> Location of file or directory from`/`
+- Relative path -> Location of file or directory from present working directory
+- `mv src dest` 
+	- Moves file/directory from source to destination
+	- Source and destination can be both absolute path or relative path
+	- `mv` can also be use to rename files and folders
 
 ![01-Working with shell-1-20250211-2.png](Attachments/01-Working%20with%20shell-1-20250211-2.png)
 
 ![01-Working with shell-1-20250211-3.png](Attachments/01-Working%20with%20shell-1-20250211-3.png)
 
-`pushd` -> Remembers current working directory before changing directory
-`popd` -> Last pushed directory comes out first
+- `pushd` -> Remembers current working directory before changing directory
+- `popd` -> Last pushed directory comes out first
 
 ![01-Working with shell-1-20250211-4.png](Attachments/01-Working%20with%20shell-1-20250211-4.png)
 
-`cp src dest` -> Copy file/directory from source to destination
-`cp -r src dest` -> Recursive copy
+- `cp src dest` -> Copy file/directory from source to destination
+- `cp -r src dest` -> Recursive copy
 
 `rm {file_name}` -> Deletes file/directory. Use with `-r` option for recursive
 
-`cat file_name` -> Concatenate command. Shows contents of file
-`cat > file_name` 
-- Input content to file
-- `ctrl+d` to end
-- Will replace existing contents
+- `cat file_name` -> Concatenate command. Shows contents of file
+- `cat > file_name` 
+	- Input content to file
+	- `ctrl+d` to end
+	- Will replace existing contents
 
 `touch file_name` -> Creates a file
 
@@ -108,6 +108,7 @@ Relative path -> Location of file or directory from present working directory
 - {b} -> Scrolls the display backwards one screen full of data at a time
 - {/} -> Search text
 - {q} -> Quit
+
 `less file_name`
 - Displays file content in a scrollable way
 - {Up Arrow} -> Scrolls up the display one line
@@ -120,9 +121,10 @@ Relative path -> Location of file or directory from present working directory
 `whatis {command}`
 - One line description of what the command does
 - Ex: `whatis date`
-`man {command}` -> Provides entire documentation of the command
-`command --help` -> Provides option and format on how the command should be used
-`apropos {keyword}` -> Searches all man pages for the keyword
+
+- `man {command}` -> Provides entire documentation of the command
+- `command --help` -> Provides option and format on how the command should be used
+- `apropos {keyword}` -> Searches all man pages for the keyword
 
 ---
 
@@ -136,6 +138,7 @@ Shell types
 5. Bourne again shell (bash) -> `/bin/bash`
 
 `echo $SHELL` -> Will show which shell is in use
+
 `chsh`
 - Will change shell
 - `sudo chsh -s /bin/sh user_name`
@@ -153,15 +156,16 @@ Bash shell features
 
 
 #### Bash environment variables
-`$SHELL` -> Environment variable to store the type of shell
-`$HOME` -> Stores home directory path of current user
-`env`
- - Lists all set environment variables
- - Print each using `echo $var_name`
-`export OFFICE=home_office`
-- Set an environment variable using export command
-- Just setting `OFFICE=home_office`, without `export` command, will limit the variable to current shell session
-	- Will not be available or carry forwarded to any other processes
+- `$SHELL` -> Environment variable to store the type of shell
+- `$HOME` -> Stores home directory path of current user
+- `env`
+	- Lists all set environment variables
+	- Print each using `echo $var_name`
+- `export OFFICE=home_office`
+	- Set an environment variable using export command
+	- Just setting `OFFICE=home_office`, without `export` command, will limit the variable to current shell session
+		- Will not be available or carry forwarded to any other processes
+
 To persist across reboots and logins, add to `~/.profile` or ~/.pam_environment in users home directory
 
 ![01-Working with shell-1-20250211-9.png](Attachments/01-Working%20with%20shell-1-20250211-9.png)
@@ -178,6 +182,7 @@ PATH variable
 
 `which` command gives location of program
  - `which obs-studio`
+
 Add to PATH variable
 - `export PATH=$PATH:/new/path`
 - Ex: `export PATH=$PATH:/opt/obs/bin`
