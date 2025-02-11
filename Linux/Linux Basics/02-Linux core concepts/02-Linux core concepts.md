@@ -107,10 +107,6 @@ sockets * core * threads = # of cpus
 
 ![init-systemd.png](Attachments/init-systemd.png)
 
-`df -hP` -> Prints all mounted filesystem
-
-![dfhP.png](Attachments/dfhP.png)
-
 
 ---
 ### Runlevels
@@ -185,6 +181,38 @@ To get the file type, use either
  - 's' -> socket file
  - 'p' -> pipe
  - 'b' -> block device
+
+---
+
+### Filesystem hierarchy
+
+`/home` -> Home directory for users
+
+`/root` -> Root user's home directory
+
+`/opt` -> Install 3rd party programs
+
+`/mnt` -> Mounts loaded here. Mounts filesystem temporarily
+
+`/tmp` -> Temporary files and folders
+
+`/media` -> USB and external media are mounted here
+
+`/dev` -> For communication to devices such as, block devices, mouse, keyboard, etc
+
+`/bin` -> Basic programs and binaries, like `cp`, `mv`, `mkdir` are stored here
+
+`/etc` -> Configuration files are stored here
+
+`/lib and lib64` -> Shared libraries which will be imported in programs will be stored here
+
+`/usr` -> All user land applications and their data resides here. Ex: firefox, vi, etc.
+
+`/var` -> Logs reside here
+
+`df -hP` -> Prints all mounted filesystem
+
+![dfhP.png](Attachments/dfhP.png)
 
 ---
 
