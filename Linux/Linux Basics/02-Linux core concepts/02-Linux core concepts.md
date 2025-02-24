@@ -1,3 +1,4 @@
+
 ### Linux Kernel
 Kernel is responsible for 4 major tasks
 1. Memory management
