@@ -91,7 +91,7 @@ $`route` or $`ip route` shows routing table
 
 $`traceroute i.p` -> Shows the number of hops/devices from source to destination.
 
-$`netstat -an | grep 80 | grep -i LISTEN
+$`netstat -an | grep 80 | grep -i LISTEN`
 - Lists if port 80 is open or active
 
 $ `ip link set dev eth0 up` -> Brings interface eth0 up.
