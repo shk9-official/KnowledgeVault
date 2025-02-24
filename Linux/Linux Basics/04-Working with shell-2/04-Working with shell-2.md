@@ -31,8 +31,8 @@ $`ls -ltr test.tar` - Gives size, permissions, and created date of file.
 #### Compression
 
 **bzip2 and bunzip2**
-$`bzip2 test.img` - Compress using bzip2
-$`bunzip2 test.img.bz2` - Uncompress using bunzip2
+- $`bzip2 test.img` - Compress using bzip2
+- $`bunzip2 test.img.bz2` - Uncompress using bunzip2
 
 **gzip and gunzip**
 $`gzip test1.img` - Compress using gzip
