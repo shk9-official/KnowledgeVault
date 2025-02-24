@@ -118,6 +118,7 @@ $`apt remove telnet` - Uninstalls a package.
 ![aptremove.png](Attachments/aptremove.png)
 $`apt search telnet` - Searches for package in repository.
 ![aptsearch.png](Attachments/aptsearch.png)
+
 $`apt list | grep telnet` - Lists all packages in repository.
 
 ---
