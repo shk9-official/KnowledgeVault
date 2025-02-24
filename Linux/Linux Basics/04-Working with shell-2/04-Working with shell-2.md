@@ -36,18 +36,23 @@ $`bunzip2 test.img.bz2` - Uncompress using bunzip2
 
 **gzip and gunzip**
 $`gzip test1.img` - Compress using gzip
+
 ![targzip.png](Attachments/targzip.png)
+
 $`gunzip test1.img.gz` - Uncompress using gunzip
+
 ![gunzip.png](Attachments/gunzip.png)
 
 **xz and unxz**
-$`xz test2.img` - Compress using xz
-$`unxz test2.img.xz` - Uncompress using unxz
+- $`xz test2.img` - Compress using xz
+- $`unxz test2.img.xz` - Uncompress using unxz
 
 $`zcat hostfile.txt.bz2`
 - Read contents of file without uncompressing.
 - Can use `bzcat` and `xzcat`. 
+
 ![readwithoutextractingandredirect.png](Attachments/readwithoutextractingandredirect.png)
+
 
 ---
 
@@ -64,6 +69,7 @@ $`updatedb`
 
 $`find /home/bob -name city.txt`
 - Searches "city.txt" under "home/bob" directory.
+
 ![find.png](Attachments/find.png)
 
 **Grep** - Searches for content within files
@@ -122,6 +128,7 @@ $`grep -A1 -B1 chelsea pl.txt
 $`echo $SHELL > shell.txt`
 - Redirects stdout to "shell.txt" file.
 - Overwrites the contents of the "shell.txt" file.
+
 ![redirectstdout.png](Attachments/redirectstdout.png)
 ![redirect.png](Attachments/redirect.png)
 
@@ -130,6 +137,7 @@ $`echo "This is bash." >> shell.txt` - Appends at the end of file
 $`cat missing_file.txt 2> error.txt`
 - "2>" Redirect standard error to "error.txt" file.
 - Overwrites the contents of "error.txt" file.
+
 ![redirectstderror.png](Attachments/redirectstderror.png)
 
 $`cat missing_file.txt 2>> shell.txt`- Appends standard error output to shell.txt.
