@@ -32,25 +32,25 @@
 	2. Ex: `nginx`, `apache`.
 
 The following commands give the above details
-$`id bob`
-$`grep -i bob /etc/passwd`
+- $`id bob`
+- $`grep -i bob /etc/passwd`
 
 ![id.png](Attachments/id.png)
 
-$`who` - List of users logged in to the system.
-$`last` - All logged in users and when the system was rebooted.
+- $`who` - List of users logged in to the system.
+- $`last` - All logged in users and when the system was rebooted.
 
 **Linux security**
-5. Access control
+1. Access control
 	1. Based on credentials and decide who can access system.
-6. PAM - Pluggable authentication module
-	1. Used to authenticate to programs and services
-7. Network security
-	1. Access to services listening on ports.
-8. SSH - Secure shell
-	1. For remote access
-9. SELinux
-	1. Isolates processes running on same system
+2. PAM - Pluggable authentication module
+	2. Used to authenticate to programs and services
+3. Network security
+	3. Access to services listening on ports.
+4. SSH - Secure shell
+	4. For remote access
+5. SELinux
+	5. Isolates processes running on same system
 
 
 To switch user to a different user
@@ -59,7 +59,9 @@ To switch user to a different user
 - $`sudo ls /root` - Runs command as root.
 
 File `/etc/sudoers` lists which users can run commands with elevated privileges (sudo).
+
 ![etcsudoers.png](Attachments/etcsudoers.png)
+
 - All lines beginning with `#` are comments.
 - First field can be user or group.
 	- User - bob, michael
@@ -116,7 +118,7 @@ To get the details about the user, their home directory, group, default shell et
 `/etc/group` - Has all groups in system
 - Format
 	- name:password(x):GID:members
-		- members contains users part of the group.
+		- contains users part of the group.
 
 ![grepetcgroup.png](Attachments/grepetcgroup.png)
 
@@ -124,9 +126,9 @@ To get the details about the user, their home directory, group, default shell et
 
 ### User management
 
-$`useradd user_name` -> New user created
-$`grep -i user_name /etc/passwd` -> Shows information about the created user
-$`passwd user_name` -> Sets/changes password to the user.
+- $`useradd user_name` -> New user created
+- $`grep -i user_name /etc/passwd` -> Shows information about the created user
+- $`passwd user_name` -> Sets/changes password to the user.
 
 ![useraddpasswd.png](Attachments/useraddpasswd.png)
 
@@ -159,7 +161,9 @@ $`groupdel developer` -> Deletes group "developer".
 ### File permissions and ownerships
 
 $`ls -l test.txt`
+
 ![filetypeperms.png](Attachments/filetypeperms.png)
+
 - `-rwxrw-r-x`
 - The first `-` denotes file type
 	- `d` - Directory
@@ -220,7 +224,7 @@ To ssh into a remote host
 Key pair = Public key (stored in remote server) + Private key (In client machine)
 
 To create key pair
-- $`ssh -keygen -t rsa
+- $`ssh -keygen -t rsa`
 - Public key is generated and stored under - `<user_home_directory>/.ssh/id_rsa.pub`.
 - Private key is generated and stored under - `<user_home_directory>/.ssh/id_rsa`.
 
@@ -311,7 +315,7 @@ $`iptables -A OUTPUT -p TCP 172.16.238.15 --dport 80 -j ACCEPT`
 
 
 To drop all outgoing connections to port 80 and 443
-- $`iptables -A OUTPUT -p TCP --dport 443 -j DROP
+- $`iptables -A OUTPUT -p TCP --dport 443 -j DROP`
 - $`iptables -A OUTPUT -p TCP --dport 80 -j DROP`
 
 ![iptablesoutgoingdrop.png](Attachments/iptablesoutgoingdrop.png)
