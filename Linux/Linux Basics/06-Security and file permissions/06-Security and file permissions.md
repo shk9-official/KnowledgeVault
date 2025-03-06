@@ -41,16 +41,16 @@ The following commands give the above details
 - $`last` - All logged in users and when the system was rebooted.
 
 **Linux security**
-1. Access control
-	1. Based on credentials and decide who can access system.
-2. PAM - Pluggable authentication module
-	2. Used to authenticate to programs and services
-3. Network security
-	3. Access to services listening on ports.
-4. SSH - Secure shell
-	4. For remote access
-5. SELinux
-	5. Isolates processes running on same system
+- Access control
+	- Based on credentials and decide who can access system.
+- PAM - Pluggable authentication module
+	- Used to authenticate to programs and services
+- Network security
+	- Access to services listening on ports.
+- SSH - Secure shell
+	- For remote access
+- SELinux
+	- Isolates processes running on same system
 
 
 To switch user to a different user
@@ -135,7 +135,7 @@ To get the details about the user, their home directory, group, default shell et
 
 Run the above commands as root.
 
-$`whoami` ->Gives user name
+$`whoami` -> Gives user name
 
 $`useradd -u 1009 -g 1009 -d /home/bob -s /bin/bash -c "user with custom settings" bob`
 - `-c` -> Custom comments
@@ -219,7 +219,7 @@ Changing ownership of file
 To ssh into a remote host
 - $`ssh ip`
 - $ `ssh user_name@ip/hostname`
-- $`ssh -l user_name ip/hostname
+- $`ssh -l user_name ip/hostname`
 
 Key pair = Public key (stored in remote server) + Private key (In client machine)
 
