@@ -93,7 +93,8 @@ $`journalctl -u docker.service`
 
 ![journalctl.png](Attachments/journalctl.png)
 
-![[systemctlandjournalctl.png]]
+![systemctlandjournalctl.png](Attachments/systemctlandjournalctl.png)
+
 
 ---
 
