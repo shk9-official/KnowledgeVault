@@ -1,3 +1,11 @@
+
+
+![Docker-for-Beginners-Mumshad-Mannambeth.pdf](Attachments/Docker-for-Beginners-Mumshad-Mannambeth.pdf)
+
+Docker course notes - https://notes.kodekloud.com/docs/Docker-Training-Course-for-the-Absolute-Beginner/Introduction/Introduction
+
+---
+
 ### Docker overview
 
 Assume a stack with the following
