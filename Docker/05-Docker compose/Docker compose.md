@@ -40,7 +40,7 @@ To setup this entire application, we could use `docker run` command and run each
 ![linkcontainers-1.png](Attachments/linkcontainers-1.png)
 
 In the above screenshot, the "voting-app" container is linked to the "redis" container.
-- Effectively what happens is , in the `/etc/hosts` file in the "voting-app" container, a entry is added to resolve "redis" to the container's internal i.p address.
+- Effectively what happens is , in the `/etc/hosts` file in the "voting-app" container, an entry is added to resolve "redis" to the container's internal i.p address.
 
 ![linkcontainers-2.png](Attachments/linkcontainers-2.png)
 
@@ -86,7 +86,7 @@ Docker compose version 2 and greater
 - Automatically adds all services in the compose file (the specified application) to a dedicated network bridge.
 	- Each container can talk to other using service/image name.
 	- In Docker compose v1, all containers, including those outside the compose file are added to the default network bridge.
-- `depends-on` can be added to specify starting order to resolve dependencies to other containers.
+- `depends_on` can be added to specify starting order to resolve dependencies to other containers.
 - Docker stacks and swarms work from v3 onwards.
 
 ![dockercomposenetworking.png](Attachments/dockercomposenetworking.png)
@@ -100,3 +100,5 @@ If a container like PostGreSql needs environment variables such as user name and
 
 ![dockercomposesetenvvar.png](Attachments/dockercomposesetenvvar.png)
 
+
+---
