@@ -100,6 +100,7 @@ Docker command with following options
 - `-e` - environment variable
 - `-v` - volume mount
 
-![[dockerrunwithenvvarandvolmap.png]]
+![dockerrunwithenvvarandvolmap.png](Attachments/dockerrunwithenvvarandvolmap.png)
+
 
 ---
