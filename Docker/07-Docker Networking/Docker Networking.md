@@ -1,4 +1,6 @@
 
+### Docker Networking
+
 When Docker is installed, 3 networks are created automatically
 
 ![dockernetworktypes.png](Attachments/dockernetworktypes.png)
@@ -24,7 +26,7 @@ User defined networks can be created using
 - $`docker network ls` -> Lists all docker network
 	- ![dockernetworklist.png](Attachments/dockernetworklist.png)
 - To check the network type, i.p and other network related details of a container, run the following command and check under "Network settings:Networks"
-	- $`docker inspect <container_id or name>'
+	- $`docker inspect <container_id or name>`
 	- ![dockernetworkinspect.png](Attachments/dockernetworkinspect.png)
 
 ![dockeruserdefinednetwork.png](Attachments/dockeruserdefinednetwork.png)
