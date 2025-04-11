@@ -36,6 +36,7 @@
 4. Review the details and click on the Store button in the bottom right corner.
 5. Click on "View Details" and Copy the "Secret ARN" which we’ll use in the next step.
 
+
 ![secretcreatedinsecretsmanager.png](Attachments/secretcreatedinsecretsmanager.png)
 
 ### Using Lambda to use secrets in AWS Secret Manager
