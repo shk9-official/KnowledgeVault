@@ -33,6 +33,7 @@
 	5. Encryption Key: Select Default Key
 
 ![secretsmanageraddsecret.png](Attachments/secretsmanageraddsecret.png)
+
 3. Give this secret a name and keep everything else default.
 4. Review the details and click on the Store button in the bottom right corner.
 5. Click on "View Details" and Copy the "Secret ARN" which we’ll use in the next step.
