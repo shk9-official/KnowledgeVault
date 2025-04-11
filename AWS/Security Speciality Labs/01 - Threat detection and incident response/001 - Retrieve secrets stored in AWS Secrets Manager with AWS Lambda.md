@@ -14,6 +14,7 @@
 5. Edit the configuration to set Timeout to 2 mins.
 
 ![lambdafunctionconfigurationedit.png](Attachments/lambdafunctionconfigurationedit.png)
+
 6. Click Save to create a Lambda function.
 7. Under the code tab, you can create a Lambda function to talk to any AWS service, say DynamoDB.
 	1. For the Lambda function to access the DynamoDB, we could hard code AWS access and secret keys in the Lambda code.
