@@ -59,6 +59,7 @@
 		- "Bucket block public access disabled" -> Bucket level setting for blocking public access has been disabled.
 	- "Instance credential exfiltration" finding in Guard Duty can identify credentials which might be stolen or used.
 	- There is a dedicated finding type to protect against crypto mining attacks.
+	- Guard Duty has a finding type which will notify if CloudTrail is disabled.
 
 **Trusted IP list**
 - Guard Duty will trust it.
@@ -74,7 +75,7 @@
 **Malware protection in Guard Duty**
 - AWS Guard Duty performs agent less malware scanning.
 	- Default/other malware protection is based on agent running on a system to scan for malware (deep security).
-- Steps done by Guard Duuty to perform agent less malware scans
+- Steps done by Guard Duty to perform agent less malware scans
 	- Step 1 - There is a EC2 instance with EBS attached to it, where malware scan needs to be performed.
 	- Step 2 - Takes a snapshot of EBS.
 	- Step 3 - Snapshot is used to deploy EBS in AWS account.
@@ -109,5 +110,8 @@ Upon receiving the Guard Duty alert, EventBridge can
 - Send notifications using SNS, hence to Slack via HTTP and Email.
 - Trigger Lambda function or orchestrated Step functions to automatically remediate/fix findings.
 
+CloudWatch Event Rule can be set up to monitor GuardDuty findings, and 
+- send notifications to AWS SNS
+- remediate threats y using Lambda / Step functions.
 
 ---
