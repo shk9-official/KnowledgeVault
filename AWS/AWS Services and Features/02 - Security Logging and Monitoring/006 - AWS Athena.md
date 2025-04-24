@@ -12,4 +12,6 @@
 - Federated query
 	- Athena can query all types of datastores, relational and non-relational
 	- This is done using datastore connectors running on Lambda
-- 
+
+
+---
