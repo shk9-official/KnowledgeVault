@@ -64,6 +64,7 @@
 - Maintenance window -> is when the patch is installed
 - Patch Group -> Set of instances associated with a patch baseline (tags can be used)
 - Patching automation for missing compliance can be implemented using AWS SSM Automation.
+- Patch compliance maintains a list of missing updates for EC2 instances.
 
 ### AWS Systems Manager - Automation
 

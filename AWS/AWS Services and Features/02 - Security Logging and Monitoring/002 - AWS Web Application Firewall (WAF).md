@@ -35,3 +35,6 @@ Works on layer 7
 - Rule priority
 	- Every rule is assigned a priority.
 	- If a request matches a "P0" rule, then none of the other rules will inspect the request.
+
+
+---

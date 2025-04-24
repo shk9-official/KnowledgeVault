@@ -2,6 +2,7 @@
 ### AWS Secrets Manager
 
 - It is used to store sensitive data such as passwords, tokens, keys, etc in a secure environment, with strict access controls.
+	- In CloudFormation reference it like "{{resolve:secretsmanager:MysecretID:secretstring}}" to access the secret securely.
 - Hashicorp Vault has similar capabilities of AWS Secrets Manager.
 - It enables you to easily rotate, manage, and retrieve credentials, keys, and other secrets throughout their lifecycle.
 - Hard coding secrets or sensitive information is a bad practice as it brings instability and misuse. AWS Secrets Manager eliminates the need to hardcode sensitive information in plain text.
