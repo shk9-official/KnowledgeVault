@@ -132,5 +132,6 @@
 ### CloudWatch Contributor Insights
 
 - Helps in identifying bad hosts, heaviest network users, URLs generating most errors etc.
+- Contributor Insights can be used to check the contributors to Route53 resolver queries.
 
 ---

@@ -18,7 +18,6 @@
   AWS Config can check is intended applications are installed on a EC2 instance or not using "ec2-managedinstance-applications-required" config rule.
 - Resources in Config keeps track of changes in a resource.
 - Rules in Config evaluates changes for violation and compliance.
-- 
 - Pricing
 	- Based on Config item per account per region
 	- Based on rule evaluation - Every time a resource is evaluated for compliance against a AWS Config rule.
@@ -72,5 +71,10 @@
 
 - To automatically revoke unused/expired IAM access keys, use AWS Config remediation with SSM Document.
 
+
+### AWS Config and VPC Flow logs
+
+- AWS Config can determine is VPC flow logs are disabled.
+- Remediation action can be set to automatically enable VPC flow logs using "AWSSupport-EnableVPCFlowlogs" SSM run book.
 
 ---
