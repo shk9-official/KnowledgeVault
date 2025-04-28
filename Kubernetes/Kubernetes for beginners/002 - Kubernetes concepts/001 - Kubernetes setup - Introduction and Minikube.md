@@ -12,7 +12,7 @@
 - Typically when installing kubernetes, Master and Worker nodes are created sperately as below
 - ![master-workernodes.png](Attachments/master-workernodes.png)
 - Minikube bundles all the above components into a single node kubernetes cluster
-- Insert image here
+- ![minikube.png](Attachments/minikube.png)
 - Minikube install
 	- ![minikubeinstall.png](Attachments/minikubeinstall.png)
 	- Minikube start without docker
