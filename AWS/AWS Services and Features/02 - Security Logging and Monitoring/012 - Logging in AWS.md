@@ -27,3 +27,5 @@ All of the above can be stored in S3 and analysed by Athena
 
 ![centralizedloggingarch.png](Attachments/centralizedloggingarch.png)
 
+
+---

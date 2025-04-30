@@ -75,3 +75,6 @@
 - Ensure that "Requester pays" feature is disabled in S3 bucket
 - Verify S3 bucket does not have any older policies that limit CloudTrail's permission to deliver logs only to certain regions.
 - Ensure log prefix in CloudTrail exists in S3 bucket policy. 
+
+
+---
