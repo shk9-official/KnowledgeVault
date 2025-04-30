@@ -15,6 +15,7 @@
 ![yamlkeyvalpair.png](Attachments/yamlkeyvalpair.png)
 
 - Arrays/Lists are represented as below
+	- Lists are ordered collection
 ```
 Fruits:
 -   Orange
@@ -30,6 +31,10 @@ Vegetables:
 ![yamlarray.png](Attachments/yamlarray.png)
 
 - Dictionary is represented as below
+	- Stores different information/property about a single object dictionary is used
+	- "Calories", "Fat" and "Carbs" are different information about "Banana".
+	- "Color", "Model", "Transmission", "Price" are different properties of a car.
+	- Dictionary is an unordered collection
 ```
 Banana:
    Calories: 105
@@ -42,6 +47,21 @@ Grapes:
    Carbs: 16 g
 ```
 
+```
+Fruits: <- Element
+    -    Banana: <- List
+			 Calories: 105 <- Dictionary
+			 Fat: 0.4 g
+			 Carbs: 27g
+
+    -    Grape: <- List
+             Calories: 62 <- Dictionary
+             Fat: 0.3 g
+             Carbs: 16 g
+```
+
+- 
+
 ![yamldictionary.png](Attachments/yamldictionary.png)
 
 - Dictionary within a Dictionary
@@ -51,6 +71,8 @@ Grapes:
 - Dictionary within an Array
 
 ![yamlarraydictionary.png](Attachments/yamlarraydictionary.png)
+
+![listofdictionaries.png](Attachments/listofdictionaries.png)
 
 - Array within a Dictionary
 
