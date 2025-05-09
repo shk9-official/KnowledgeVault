@@ -111,6 +111,8 @@ spec:
 		- Run $`kubectl apply -f pod-definition.yaml` to apply changes made.
 	- ![kubectlcreatepodusingyamlfile.png](Attachments/kubectlcreatepodusingyamlfile.png)
 	- ![kubectlapply.png](Attachments/kubectlapply.png)
+	- $`kubectl run redis --image redis123 --dry-run=client -o yaml > redis.yaml`
+		- Will create a yaml file based on the input provided
 
 
 ---
