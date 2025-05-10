@@ -82,7 +82,7 @@ spec:
 	- Deletes replica set and all the underlying pods which it monitors
 - $`kubectl get pods`
 	- Gives list of pods created
-- $`kubectl describe replicaset <replicaset_name>
+- $`kubectl describe replicaset <replicaset_name>`
 	- Gives detailed information about the replica set.
 - ![replicasetyaml.png](Attachments/replicasetyaml.png)
 - ![kubectlgetrsdescribers.png](Attachments/kubectlgetrsdescribers.png)
