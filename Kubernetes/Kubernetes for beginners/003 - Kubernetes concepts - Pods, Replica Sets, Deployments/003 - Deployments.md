@@ -57,7 +57,7 @@ spec:
 
 ![deploymentdfnfilecreateanddeploy-2.png](Attachments/deploymentdfnfilecreateanddeploy-2.png)
 
-
+![kubectlgetdeploymentdescribedeployments.png](Attachments/kubectlgetdeploymentdescribedeployments.png)
 ### Rollouts, Update/Upgrades and Rollback
 
 **Rollouts**
