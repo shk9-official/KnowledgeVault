@@ -71,6 +71,7 @@ spec:
 	- Multi pods on single node
 	- Multi pods on multi node as part of cluster
 - ![nodeportservice-3.png](Attachments/nodeportservice-3.png)
+- ![kubectlcreatenodeportservicegetservicedescribeservice.png](Attachments/kubectlcreatenodeportservicegetservicedescribeservice.png)
 
 
 ---

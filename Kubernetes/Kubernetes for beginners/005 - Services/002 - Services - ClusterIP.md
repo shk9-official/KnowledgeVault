@@ -38,6 +38,9 @@ spec:
 - $`kubectl get services`
 	- Lists all the services
 - ![clusteripservicedefnyamlfile.png](Attachments/clusteripservicedefnyamlfile.png)
+- ![kubectlgetservicedescribeservice.png](Attachments/kubectlgetservicedescribeservice.png)
+	- `kubernetes` is a default service present when Kubernetes is setup.
+		- It is of type ClusterIP
 
 
 ---
