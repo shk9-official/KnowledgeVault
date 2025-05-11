@@ -19,3 +19,6 @@ spec:
 - $`kubectl describe service <service_name>`
 	- Gives details about the service like name, IP, targetPort, labels etc.
 - Endpoints are all the pods the service services
+
+
+---
