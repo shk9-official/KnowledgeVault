@@ -32,6 +32,10 @@ metadata:
 	- `metadata` is represented as dictionary
 	- `name` and `labels` fields are not modifiable.
 	- Data under `labels`are modifiable.
+	- `labels` are optional
+	- `labels` are of type dictionary
+	- `name` is of type string
+	- Only `name` and `labels` can be specified, cannot add any more
 - `spec` - Specification of the object being created
 ```
 spec:
@@ -94,7 +98,7 @@ spec:
 	- Compared to just `get pods` command, it gives more details
 	- In "Ready" column, "RunningContainersinPod/TotalContainersinPod" is mentioned
 - ![kubectlrungetpods.png](Attachments/kubectlrungetpods.png)
-- $`kubectl describe pod <pod_name>
+- $`kubectl describe pod <pod_name>`
 	- Gives detailed information about the pod, including
 		- Image used for the containers in the pod
 		- Number of containers running in the pod
