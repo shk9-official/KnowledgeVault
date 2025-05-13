@@ -87,6 +87,7 @@ spec:
 - ![replicasetyaml.png](Attachments/replicasetyaml.png)
 - ![kubectlgetrsdescribers.png](Attachments/kubectlgetrsdescribers.png)
 - ![kubectlgetpoddelpod.png](Attachments/kubectlgetpoddelpod.png)
+- $`kubectl explain replicaset` -> Explains replica set
 
 ### Labels and Selectors
 
