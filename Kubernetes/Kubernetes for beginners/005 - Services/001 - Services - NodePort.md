@@ -52,7 +52,7 @@ spec:
 - `port` is a mandatory field
 - If `targetPort` is not specified, it will be same as value of `port`
 - If `nodePort` is not specified, a random available port from 30000 to 32767 is picked
-- To tie the service to a pod, we need to use the pod's labels (from pod definition yaml file)
+- To tie the service to a pod, we need to use the pod's labels (under `labels:`) (from pod definition yaml file) and specify it under `selector:` in service definition file.
 - ![nodeportservicedefnyamlfile.png](Attachments/nodeportservicedefnyamlfile.png)
 - $`kubectl create -f service-definition.yaml`
 	- Creates the NodePort service
@@ -66,6 +66,7 @@ spec:
 - In the case where multiple pods across a cluster are present with the same label,
 	- When a service is created, it takes all the pods with the matching labels and uses them as endpoints automatically.
 	- We do not need to make additional configurations.
+	- Service uses random algorithm to distribute traffic across pods.
 - In all of the following cases, service is created exactly the same way. When pods are removed/added, the service is automatically updated
 	- Single pod on single node
 	- Multi pods on single node
@@ -73,5 +74,17 @@ spec:
 - ![nodeportservice-3.png](Attachments/nodeportservice-3.png)
 - ![kubectlcreatenodeportservicegetservicedescribeservice.png](Attachments/kubectlcreatenodeportservicegetservicedescribeservice.png)
 
+
+**Create nodeport service using kubectl**
+
+$`kubectl create service nodeport webapp-service --tcp=8080:8080 --node-port=30080 --dry-run=client -o yaml > service-definition.yaml`
+
+$`kubectl create -f service-definition.yaml`
+
+For help
+- $`kubectl create service --help`
+- $`kubectl create service nodeport --help`
+
+![createnodeportservusingkubectl.png](Attachments/createnodeportservusingkubectl.png)
 
 ---
