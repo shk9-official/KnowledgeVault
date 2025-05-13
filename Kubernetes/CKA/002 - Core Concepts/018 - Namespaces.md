@@ -7,6 +7,7 @@
 - "kube-public" namespace contains resources which can be accessed publically
 - Namespaces are typically used for isolation
 	- Ex: Same cluster can be used to deploy both production and development environments. Deploying them in separate namespaces will isolate from each other.
+- ![namespaceisolation.png](Attachments/namespaceisolation.png)
 - Each namespace can have its own set of policies to define who can do what
 - Each namespace can be assigned a quota of resources in a cluster
 	- to guarantee availability of resources
