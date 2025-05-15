@@ -17,5 +17,4 @@ Exam tips - https://docs.linuxfoundation.org/tc-docs/certification/tips-cka-and-
 
 Community forum - https://kodekloud.com/community/top?period=monthly
 
-
 ---

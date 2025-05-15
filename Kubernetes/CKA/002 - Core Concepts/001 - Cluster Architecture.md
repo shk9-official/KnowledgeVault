@@ -1,10 +1,33 @@
 
+### Course details
+
+**Presentation deck**
+
+![Kubernetes-CKA-0100-Core-Concepts-1.pdf](Attachments/Kubernetes-CKA-0100-Core-Concepts-1.pdf)
+
+
+![Kubernetes-services.pdf](Attachments/Kubernetes-services.pdf)
+
+
+![Core-concepts-2.pdf](Attachments/Core-concepts-2.pdf)
+
+
+**Course Notes**
+
+https://notes.kodekloud.com/docs/CKA-Certification-Course-Certified-Kubernetes-Administrator/Introduction/Course-Introduction
+
+[https://github.com/kodekloudhub/certified-kubernetes-administrator-course](https://github.com/kodekloudhub/certified-kubernetes-administrator-course)
+- Repository of notes, links to documentation, and answers to practice questions here
+
+
+---
+
 ### Cluster architecture
 
 - Purpose of Kubernetes is to host applications in the form of containers, in an automated fashion
 - Kubernetes enables easy deployment of number of instances
 - Kubernetes enables communication between services
-- ![kubernetesarch.png](Attachments/kubernetesarch.png)
+- ![clusterarch.png](Attachments/clusterarch.png)
 - Two types of Nodes
 	- Worker nodes - Hosts applications as containers
 	- Master nodes
