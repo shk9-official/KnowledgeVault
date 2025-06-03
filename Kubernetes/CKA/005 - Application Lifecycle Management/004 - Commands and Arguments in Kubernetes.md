@@ -24,6 +24,12 @@ spec:
 ```
 - `command:` - corresponds to `ENTRYPOINT` instruction in docker file.
 	- This overrides the `ENTRYPOINT` instruction in the docker file
+	- It can also be specified as 
+```
+command:
+  - "sleep"
+  - "20"
+```
 - `args:` - Anything which is appended to the `docker run` command goes here.
 	- This overrides the `CMD` instruction in the docker file
 	- P.S: This is an array `[ "10", "11", "12" ]`
