@@ -14,6 +14,7 @@
 			- `kubectl create configmap <config_name> --from-file=<path_to_file>`
 			- `--from-file` allows you to specify the environment variables from a file like app_config.properties
 			- ![configmapimp.png](Attachments/configmapimp.png)
+			- ![createconfigmapimp.png](Attachments/createconfigmapimp.png)
 		- Declarative way
 			- Create a ConfigMap definition file
 			- Create the ConfigMap - `kubectl create -f configmap-defn.yaml`
@@ -41,6 +42,7 @@
 		- `kubectl create -f pod-defn.yaml`
 			- It will take the details from ConfigMap
 		- ![injectconfigmapintopoddefnfile.png](Attachments/injectconfigmapintopoddefnfile.png)
+		- ![injectconfigmapenvfrom.png](Attachments/injectconfigmapenvfrom.png)
 		- Other ways to inject environment variable into pod definition file
 			- Single Environment variable
 			```
@@ -51,6 +53,7 @@
 			        name: app-config
 			        key: APP_COLOR
            ```
+			- ![injectconfigmapsinglevar.png](Attachments/injectconfigmapsinglevar.png)
 			- Volume
 			```
 			volumes:
