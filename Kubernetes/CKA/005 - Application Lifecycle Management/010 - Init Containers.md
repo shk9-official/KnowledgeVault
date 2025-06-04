@@ -31,6 +31,8 @@ spec:
     command: \['sh', '-c', 'git clone  ;'\]
 ```
 
+![initcontainerdefn.png](Attachments/initcontainerdefn.png)
+
 When a POD is first created, the **initContainer** is run, and the process in the **initContainer** must run to completion before the real container hosting the application starts.
 
 You can configure multiple such **initContainers** as well, similar to how we did for the multi-container pod. In that case, each **initContainer** is run one at a time in sequential order.
@@ -62,5 +64,8 @@ spec:
 
 Read more about **initContainers** here
 
+Add Init container to existing pod
+
+![addinitcontainertoexistingpod.png](Attachments/addinitcontainertoexistingpod.png)
 
 ---

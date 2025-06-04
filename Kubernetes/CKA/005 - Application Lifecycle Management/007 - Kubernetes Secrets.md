@@ -48,7 +48,7 @@
 	      name: app-secret
     ```
 	- `kubectl create -f pod-defn.yaml` - Creates the pod with secrets injected
-	- ![[injectsecretintopod.png]]
+	- ![injectsecretintopod.png](Attachments/injectsecretintopod.png)
 	- Other ways to inject secret
 		```
 		env:
