@@ -64,4 +64,6 @@
 	- ![vpavshpa.png](Attachments/vpavshpa.png)
 
 
+![Kubernetes-CKA-0400-Application-Lifecycle-Management-1.pdf](Attachments/Kubernetes-CKA-0400-Application-Lifecycle-Management-1.pdf)
+
 ---
