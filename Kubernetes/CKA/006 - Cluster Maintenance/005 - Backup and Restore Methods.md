@@ -31,4 +31,8 @@
 	- ![snapshotrestoreofetcdb.png](Attachments/snapshotrestoreofetcdb.png)
 
 ![Kubernetes-CKA-0500-Cluster-Maintenance-v1.2-1.pdf](Attachments/Kubernetes-CKA-0500-Cluster-Maintenance-v1.2-1.pdf)
+
+
+
 ---
+
