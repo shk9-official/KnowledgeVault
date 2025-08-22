@@ -18,6 +18,7 @@ Configuring CNI
 	- Cilium
 - Which CNI plugin to use is mentioned under `/etc/cni/net.d`
 - ![cnisamplefile.png](Attachments/cnisamplefile.png)
+- ![cniconfigure.png](Attachments/cniconfigure.png)
 - To delete a CNI
 	- `kubectl delete daemonset -n kube-flannel kube-flannel-ds` - Deletes the daemon set
 	- `kubectl delete cm kube-flannel-cfg -n kube-flannel` - Deletes config maps
