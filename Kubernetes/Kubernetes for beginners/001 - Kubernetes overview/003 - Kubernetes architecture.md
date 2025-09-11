@@ -45,7 +45,7 @@ Components installed in
 - Worker node
 	- kubelet
 	- container runtime (Docker, Rkt, Cri-o)
-- ![master-workernodes.png](Kubernetes/Kubernetes%20for%20beginners/001%20-%20Kubernetes%20overview/Attachments/master-workernodes.png)
+- ![master-workernodes.png](Attachments/master-workernodes.png)
 
 ### kubectl
 - Known as Kube command line tool or kube control
