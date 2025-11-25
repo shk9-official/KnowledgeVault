@@ -11,6 +11,8 @@
 
 ![deploymentwithkubeadmsteps.png](Attachments/deploymentwithkubeadmsteps.png)
 
+![compofkube.png](Attachments/compofkube.png)
+
 The vagrant file used in the next video is available here:
 
 [https://github.com/kodekloudhub/certified-kubernetes-administrator-course](https://github.com/kodekloudhub/certified-kubernetes-administrator-course)
