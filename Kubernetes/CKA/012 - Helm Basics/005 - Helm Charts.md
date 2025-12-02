@@ -1,7 +1,7 @@
 
 ### Helm Charts
 
-- ![[helmcharttemplatesvalueschart.png]]
+- ![helmcharttemplatesvalueschart.png](Attachments/helmcharttemplatesvalueschart.png)
 - apiVersion for Helm 2 will not be set or will be set to v1 in chart.yaml file
 - apiVersion for Helm 3 will be set to v2 in chart.yaml file
 - apiVersion
