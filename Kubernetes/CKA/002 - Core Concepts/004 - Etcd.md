@@ -121,4 +121,12 @@ kubectl exec etcd-controlplane -n kube-system -- sh -c "ETCDCTL_API=3 etcdctl ge
 ```
 
 
+To take backup of ETCD
+- Run `kubectl describe pod etcd-controlplane -n kube-system` and get `--cert-file`, `--key-file` and `--peer-trusted-ca-file`
+- Note down target url `--listen-client-urls=https://127.0.0.1:2379`
+- `ETCDCTL_API=3 etcdctl --endpoints https://127.0.0.1:2379 --cacert=/etc/kubernetes/pki/etcd/ca.crt --cert=/etc/kubernetes/pki/etcd/server.crt --key=/etc/kubernetes/pki/etcd/server.key snapshot save <location_to_save_backup_file>`
+- Verify backup - 
+	- `ETCDCTL_API=3 etcdctl --write-out=table snapshot status <location_to_save_backup_file>`
+- https://kubernetes.io/docs/tasks/administer-cluster/configure-upgrade-etcd/#backing-up-an-etcd-cluster
+
 ---
